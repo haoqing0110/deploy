@@ -63,4 +63,6 @@ kubectl delete -k community-subscriptions/
 echo "Cleaning up the open-cluster-management namespace.."
 oc delete namespace open-cluster-management
 
+oc get crds | grep open-cluster-management | awk '{print $1}' | xargs kubectl delete crds --grace-period=0 --force
+
 exit 0

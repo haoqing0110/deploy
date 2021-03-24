@@ -1,0 +1,14 @@
+apiVersion: v1
+data:
+  manifest-oneimage.json: |
+    [
+        {
+          "image-name": "multiclusterhub-repo",
+          "image-remote": "quay.io/haoqing",
+          "image-digest": "sha256:8b85fadfbd453a5afd0f883a735d13c93c8756784318223b382801a9306f0a02",
+          "image-key": "multiclusterhub_repo"
+        }
+      ]
+kind: ConfigMap
+metadata:
+  name: hq-image

@@ -5,6 +5,7 @@ metadata:
   namespace: open-cluster-management
   annotations:
     "mch-imageRepository": "quay.io/open-cluster-management"
+    "mch-imageOverridesCM": "hq-image"
 spec:
   imagePullSecret: multiclusterhub-operator-pull-secret
   
